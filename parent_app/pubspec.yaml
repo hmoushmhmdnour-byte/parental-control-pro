@@ -1,0 +1,97 @@
+name: parental_control_parent
+description: Professional Parental Control App - Parent Dashboard
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.14.0
+  firebase_database: ^10.2.0
+  firebase_messaging: ^14.7.0
+  cloud_firestore: ^4.14.0
+  firebase_storage: ^11.5.0
+
+  # State Management
+  get: ^4.6.5
+  provider: ^6.1.0
+
+  # Location & Maps
+  geolocator: ^10.1.0
+  google_maps_flutter: ^2.5.0
+  location: ^5.0.1
+
+  # Device Info
+  device_info_plus: ^9.1.1
+  package_info_plus: ^5.0.1
+
+  # UI & Widgets
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.7
+  cached_network_image: ^3.3.0
+  smooth_page_indicator: ^1.1.0
+  intl: ^0.19.0
+  skeletons: ^0.0.20
+
+  # Charts
+  fl_chart: ^0.65.0
+  charts_flutter: ^0.12.0
+
+  # Utils
+  http: ^1.1.0
+  dio: ^5.3.1
+  connectivity_plus: ^5.0.1
+  shared_preferences: ^2.2.2
+  uuid: ^4.0.0
+  intl_utils: ^2.8.5
+
+  # Animation & Transition
+  flutter_animate: ^4.2.0
+  page_transition: ^2.1.0
+
+  # Local Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  hive: ^2.2.3
+
+  # Logging
+  logger: ^2.1.0
+  firebase_crashlytics: ^3.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_linter: ^3.0.0
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
